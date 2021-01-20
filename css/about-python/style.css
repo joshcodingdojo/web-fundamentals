@@ -1,11 +1,12 @@
 body {
   color: white;
+  /* font-family: sans-serif; */
 }
 
 .page-container {
   width: 970px;
   background-color: #245076;
-  min-height: 600px;
+  min-height: 800px;
 }
 
 .text-size-box {
@@ -63,4 +64,41 @@ button.go-search-btn {
   border-radius: 5px;
   margin-left: 8px;
   width: 15%;
+}
+
+.nav {
+  width: 88%;
+  background-color: #487fad;
+  height: 52px;
+  border-radius: 6px;
+  margin-left: 82px;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div.nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.nav * {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+}
+
+ul#sub-menu li a {
+  color: white;
+  font-size: 20px;
+}
+
+#yellow-arrows {
+  color: yellow;
+  margin-right: 8px;
+  font-size: 9px;
 }
