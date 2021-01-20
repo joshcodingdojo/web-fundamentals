@@ -6,7 +6,7 @@ body {
 .page-container {
   width: 970px;
   background-color: #245076;
-  min-height: 800px;
+  min-height: 1075px;
 }
 
 .text-size-box {
@@ -97,8 +97,117 @@ ul#sub-menu li a {
   font-size: 20px;
 }
 
+ul#sub-menu {
+  margin-top: 36px;
+}
+
+ul#sub-menu li {
+  margin-top: 8px;
+}
+
 #yellow-arrows {
-  color: yellow;
+  color: #fdd32f;
   margin-right: 8px;
   font-size: 9px;
+}
+
+.top-content {
+  display: flex;
+}
+
+.top-content-text {
+  text-align: center;
+  width: 700px;
+  margin-left: 24px;
+  margin-right: 20px;
+}
+
+.sub-menu-links {
+  text-align: center;
+  margin-left: 60px;
+  width: 251px;
+}
+
+.yellow-text p {
+  font-size: 22px;
+  color: #fdd32f;
+  text-align: center;
+  text-decoration: italic;
+}
+
+div.yellow-text p:nth-last-child(1) {
+  color: white;
+}
+
+.white-content {
+  background-color: white;
+  min-height: 300px;
+  width: 100%;
+}
+
+#left,
+#right {
+  height: 275px;
+  width: 325px;
+  margin-right: 10px;
+  border-top: 5px solid #487fad;
+}
+
+div.white-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.white-content * {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+#left h3,
+#right h3 {
+  color: black;
+  margin: 0;
+}
+
+#left ul.useful-links,
+#right ul {
+  list-style-type: square;
+  margin: 0;
+}
+
+#right li,
+#left li {
+  color: black;
+}
+
+#left li a,
+#right li a {
+  color: #487fad;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#left p,
+#right p {
+  color: black;
+  font-size: 20px;
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: #ffffff7d;
+}
+
+footer p {
+  font-size: 20px;
+  margin: 80px 30px;
+}
+
+footer span {
+  font-size: 10px;
+  position: absolute;
+  margin-top: 125px;
 }
