@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disappearing photo</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="main"></div>
+  <button id="restore">RESTORE</button>
+  <script>
+    $(document).ready(function () {
+      addEightImgs()
+      $("img").click(function () {
+        $(this).hide("slow")
+      })
+      $("#restore").click(function () {
+        $("img").show()
+      })
+    })
+    function addEightImgs() {
+      var mainDiv = $("#main");
+      for (var i = 0; i < 8; i++) {
+        mainDiv.append("<img src='mountains.jpg' alt='Hibiscus Flower' >")
+      }
+    }
+  </script>
+</body>
+
+</html>
