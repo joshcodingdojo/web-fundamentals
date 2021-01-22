@@ -50,6 +50,9 @@ function highFive(num){
     }
 }
 
+Expected Output:
+  
+
 
 
 
