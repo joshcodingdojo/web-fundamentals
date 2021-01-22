@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css" />
+
+</head>
+
+<body>
+  <div class="section-holder">
+    <h1>Click</h1>
+    <p>Click the button to get an alert</p>
+    <button id="click">CLICK</button>
+  </div>
+  <div class="section-holder">
+    <h1>HIDE</h1>
+    <p>CLick the button to hide the btn</p>
+    <button id="hide">HIDE</button>
+  </div>
+  <div class="section-holder">
+    <h1>SHOW</h1>
+    <p>CLick the button to show a hidden element</p>
+    <h1 id="hidden-h1" style="display: none">BOO!</h1>
+    <button id="show">Show</button>
+  </div>
+  <div class="section-holder">
+    <h1>TOGGLE</h1>
+    <p>CLick the button to toggle this following box</p>
+    <div id="box-toggle" class="box-toggle"></div>
+    <button id="toggle">TOGGLE</button>
+  </div>
+  <div class="section-holder">
+    <h1>SLIDE UP</h1>
+    <p id="slide-up-text">CLick the button to slide hidden text up</p>
+    <button id="slide-up">SLIDE UP</button>
+  </div>
+  <div class="section-holder">
+    <h1>SLIDE DOWN</h1>
+    <p>CLick the button to slide hidden text down</p>
+    <h3 id="slide-down-text" style="display: none">Slide it down</h3>
+    <button id="slide-down">SLIDE DOWN</button>
+  </div>
+  <div class="section-holder">
+    <h1>TOGGLE SLIDE</h1>
+    <p id="slide-toggle-text">CLick the button to slidetoggle this text up and down</p>
+    <button id="slide-toggle">TOGGLE SLIDE</button>
+  </div>
+  <div class="section-holder">
+    <h1>FADEIN</h1>
+    <p>fade a hidden element in</p>
+    <div id="fade-in-block" class="fade-in-block"></div>
+    <!-- <div id="box-toggle" class="box-toggle"></div> -->
+    <button id="fade-in">FADE IN</button>
+  </div>
+  <div class="section-holder">
+    <h1>FADEOUT</h1>
+    <p>fade below element out</p>
+    <h1 id="fade-out-text">Is it better to burn out or fade away?</h1>
+    <!-- <div id="box-toggle" class="box-toggle"></div> -->
+    <button id="fade-out">FADE OUT</button>
+  </div>
+  <div class="section-holder">
+    <h1>ADDCLASS</h1>
+    <p id="text-add-class">click button to add a class to this text</p>
+    <button id="add-class">ADD CLASS</button>
+  </div>
+  <div class="section-holder">
+    <h1>BEFORE</h1>
+    <p id="text-before">click button to add an element before this element</p>
+    <button id="before">BEFORE</button>
+  </div>
+  <div class="section-holder">
+    <h1>AFTER</h1>
+    <p id="text-after">click button to add an element after this element</p>
+    <button id="after">AFTER</button>
+  </div>
+  <div class="section-holder">
+    <h1>APPEND</h1>
+    <p id="append-this">click button to add an element after this element</p>
+    <button id="append">AFTER</button>
+  </div>
+  <div class="section-holder">
+    <h1>CHANGE HTML</h1>
+    <p id="change-html">Click button below to change html of this p element</p>
+    <button id="html-change">CHANGE HTML</button>
+  </div>
+  <div class="section-holder">
+    <h1>CHANGE ATTR</h1>
+    <p id="change-attr">Click button below to change a attribute of this element</p>
+    <button id="attr">CHANGE HTML</button>
+  </div>
+  <div class="section-holder">
+    <h1>CHANGE VAL</h1>
+    <input id="change-val" type="text">
+    <p>click button to get change value of input field</p>
+    <button id="get-val">CHANGE VAL</button>
+  </div>
+  <div class="section-holder">
+    <h1>CHANGE TEXT</h1>
+    <p id="change-this-text">click button to get change value of input field</p>
+    <button id="change-text">CHANGE VAL</button>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#click").click(() => {
+        alert("You clicked the CLICK button! great!")
+      })
+      $("button#hide").click(function () {
+        $(this).hide();
+      })
+      $("#show").click(function () {
+        $("#hidden-h1").show()
+      })
+      $("#toggle").click(function () {
+        $("#box-toggle").toggle()
+      })
+      $("#slide-up").click(function () {
+        $("#slide-up-text").slideUp()
+      })
+      $("#slide-down").click(function () {
+        $("#slide-down-text").slideDown()
+      })
+      $("#slide-toggle").click(function () {
+        $("#slide-toggle-text").slideToggle()
+      })
+      $("#fade-in").click(function () {
+        $("#fade-in-block").fadeIn()
+      })
+      $("#fade-out").click(function () {
+        $("#fade-out-text").fadeOut()
+      })
+      $("#add-class").click(function () {
+        $("#text-add-class").addClass("light-cyan")
+      })
+      $("#before").click(function () {
+        $("#text-before").before("<h3>Text added before</h3>")
+      })
+      $("#after").click(function () {
+        $("#text-after").after("<h3>Text added after</h3>")
+      })
+      $("#append").click(function () {
+        $("#append-this").append("<b> APPENDED TEXT :)-</b>")
+      })
+      $("#get-val").click(function () {
+        $("#change-val").val("Coding is Cool")
+      })
+      $("#html-change").click(function () {
+        $("#change-html").html("Changed HTML via html jquery function :)")
+      })
+      $("#attr").click(function () {
+        $(this).attr("background-color", "blue");
+      })
+      $("#change-text").click(function () {
+        $("#change-this-text").text("Changed TEXT via jquery text() function :)")
+      })
+    })
+  </script>
+
+</body>
+
+</html>

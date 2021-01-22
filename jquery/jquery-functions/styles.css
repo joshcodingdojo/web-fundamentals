@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section-holder {
+}
+
+h1 {
+}
+
+p {
+}
+
+button {
+}
+
+.box-toggle {
+  height: 50px;
+  width: 50px;
+  border: 2px solid orange;
+}
+
+.fade-in-block {
+  display: none;
+  height: 50px;
+  width: 50px;
+  background-color: purple;
+}
+
+.light-cyan {
+  background-color: lightcyan;
+}
