@@ -24,12 +24,16 @@
           var address = res.results[i].location.street.number + " " +
             res.results[i].location.street.name + ", " + res.results[i].location.city +
             ", " + res.results[i].location.state + " " + res.results[i].location.postcode
-          console.log(address)
           var scopeN = i + 1;
           html_str += "<tr><th scope='row'>" + scopeN + "</th>";
-          console.log(res.results[i])
-
+          html_str += "<td>" + firstName + " " + lastName + "</td>";
+          html_str += "<td>" + age + "</td>";
+          html_str += "<td>" + email + "</td>";
+          html_str += "<td>" + address + "</td>";
+          html_str += "</tr>";
         }
+        console.log(html_str)
+        $("#table-body").html(html_str);
 
       }, "json")
     })
