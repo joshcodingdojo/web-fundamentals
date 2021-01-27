@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      console.log("HEY")
+      $.get("https://randomuser.me/api/?results=20", function (res) {
+        var html_str = ""
+        // console.log(res.results)
+        for (var i = 0; i < res.results.length; i++) {
+          var firstName = res.results[i].name.first;
+          var lastName = res.results[i].name.last;
+          var email = res.results[i].email;
+          var age = res.results[i].dob.age;
+          var address = res.results[i].location.street.number + " " +
+            res.results[i].location.street.name + ", " + res.results[i].location.city +
+            ", " + res.results[i].location.state + " " + res.results[i].location.postcode
+          console.log(address)
+          var scopeN = i + 1;
+          html_str += "<tr><th scope='row'>" + scopeN + "</th>";
+          console.log(res.results[i])
+
+        }
+
+      }, "json")
+    })
+
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Email</th>
+              <th scope="col">Address</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

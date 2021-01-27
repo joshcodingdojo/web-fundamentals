@@ -8,16 +8,19 @@
   <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script>
     $(document).ready(function () {
+      var pokemon_urls = []
       $.get(
         "https://pokeapi.co/api/v2/pokemon?limit=150",
         function (res) {
           console.log(res.results);
           for (var key in res.results) {
-            console.log(res.results[key].url)
+            pokemon_urls.push(res.results[key].url)
           }
+          console.log(pokemon_urls)
         },
         "json"
       );
+
     });
   </script>
 </head>
