@@ -8,19 +8,20 @@ html {
 }
 
 div.pg-width {
-  width: 85%;
+  width: 900px;
+  /* height: 806px; */
   margin: 0 auto;
   /* height: 500px;
   background-color: green; */
 }
 
 .left-content-box {
-  height: 730px;
-  width: 20%;
+  /* height: 791px; */
+  width: 160px;
   border-right: 3px solid black;
   border-left: 3px solid black;
   border-bottom: 3px solid black;
-  padding: 20px;
+  padding: 15px;
 }
 
 .poke-bowl-box {
@@ -29,7 +30,7 @@ div.pg-width {
 }
 
 .poke-bowl-box > p, .poke-bowl-box > span {
-  font-size: 60px;
+  font-size: 45px;
   font-style: italic;
 }
 
@@ -38,8 +39,8 @@ div.pg-width {
 }
 
 .poke-bowl-box > div {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border: 5px solid black;
   border-radius: 10px;
   display: inline-block;
@@ -47,10 +48,6 @@ div.pg-width {
 
 ul {
   list-style-type: none;
-}
-
-.link-list-box {
-  margin-top: 25px;
 }
 
 ul.links a {
@@ -61,7 +58,7 @@ ul.links a {
 }
 
 ul.links > li {
-  margin-top: 30px
+  margin-top: 20px
 }
 
 div.hours-box {
@@ -78,4 +75,95 @@ div.hours-box > p {
   /* width: 100px; */
   border: 2px solid black;
   margin-top: 10px;
+}
+
+
+
+.pg-width > div {
+  display: inline-block
+}
+
+.right-content-box {
+  height: 668px;
+  width: 675px;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  vertical-align: top;
+}
+
+.video-content-box {
+  height: 50%;
+  border-bottom: 3px solid black;
+  padding: 15px;
+}
+
+/* Video goes here */
+.video-content-box > div {
+  border: 1px solid black;
+  height: 100%;
+}
+
+.lower-content-box {
+  /* height: 50%; */
+  padding: 15px;
+}
+
+.lower-content-box > div {
+  display: inline-block;
+}
+
+.blue-box {
+  height: 272px;
+  background-color: #397bd8;
+  width: 60%;
+  border-radius: 25px;
+}
+
+.blue-box > h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+#white-circle {
+  border-radius: 50px;
+  height: 42px;
+  background-color: white;
+  width: 40px;
+  color: #397bd8;
+  font-size: 35px;
+  text-align: center;
+  display: inline-block;
+}
+
+.choose-protein-box {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+#blue-box-text {
+  font-size: 25px;
+  color: white;
+  margin-left: 10px;
+  vertical-align: super;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.pick-your-base {
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.select-a-marinade {
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+#top-txt-box {
+  margin-top: 20px;
 }
