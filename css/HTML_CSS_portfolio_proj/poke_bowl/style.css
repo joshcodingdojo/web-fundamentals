@@ -9,15 +9,12 @@ html {
 
 div.pg-width {
   width: 900px;
-  /* height: 806px; */
   margin: 0 auto;
-  /* height: 500px;
-  background-color: green; */
 }
 
 .left-content-box {
   /* height: 791px; */
-  width: 160px;
+  width: 170px;
   border-right: 3px solid black;
   border-left: 3px solid black;
   border-bottom: 3px solid black;
@@ -35,7 +32,7 @@ div.pg-width {
 }
 
 .poke-bowl-box > p {
-  color: red;
+  color: #d52f2f;
 }
 
 .poke-bowl-box > div {
@@ -84,7 +81,7 @@ div.hours-box > p {
 }
 
 .right-content-box {
-  height: 668px;
+  /* height: 668px; */
   width: 675px;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
@@ -94,7 +91,6 @@ div.hours-box > p {
 .video-content-box {
   height: 50%;
   border-bottom: 3px solid black;
-  padding: 15px;
 }
 
 /* Video goes here */
@@ -113,7 +109,7 @@ div.hours-box > p {
 }
 
 .blue-box {
-  height: 272px;
+  height: 280px;
   background-color: #397bd8;
   width: 60%;
   border-radius: 25px;
@@ -150,7 +146,7 @@ div.hours-box > p {
 }
 
 img {
-  height: 100%;
+  height: 329px;
   width: 100%;
 }
 
@@ -166,4 +162,45 @@ img {
 
 #top-txt-box {
   margin-top: 20px;
+}
+
+.red-box {
+  height: 280px;
+  width: 37%;
+  background-color: #d52f2f;
+  margin-left: 15px;
+  vertical-align: top;
+  border-radius: 25px;
+}
+
+.red-box > h1 {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+
+
+.red-box > p {
+  margin-left: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#noun {
+  font-style: italic;
+}
+
+.red-box > p:nth-of-type(2) {
+  /* margin-top: 20px; */
+  font-size: 16px;
+}
+
+.red-box > p:last-of-type {
+  /* margin-top: 5px; */
+  font-size: 16px;
+  margin-right: 28px;
 }
