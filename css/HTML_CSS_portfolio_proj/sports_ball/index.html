@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sports Ball</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -20,9 +20,12 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-12 top-scorebox-flex-container">
-          <h4>Live Scores</h4>
+      <div class="row" style="padding: 10px 0">
+        <!-- <div class="col-12 top-scorebox-flex-container"> -->
+        <div class="col-sm-12 col-md-2">
+          <h4 class="live-scores-text">Live Scores</h4>
+        </div>
+        <div id="middle-scores" class="col-sm-12 col-md-5 league-scores">
           <div>
             <p>SJC Ninjas - 314</p>
             <p>NS Pirates - 159</p>
@@ -31,6 +34,8 @@
             <p>CHI Samurai - 0</p>
             <p>TUL Wizards - 0</p>
           </div>
+        </div>
+        <div id="right-scores" class="col-sm-12 col-md-5 league-scores">
           <div>
             <p>BOS Hackers</p>
             <p>TYO Youkai</p>
@@ -40,10 +45,28 @@
             <p>SEA Sea Lions - 11</p>
           </div>
         </div>
+
+        <!-- <div>
+          <p>SJC Ninjas - 314</p>
+          <p>NS Pirates - 159</p>
+        </div>
+        <div>
+          <p>CHI Samurai - 0</p>
+          <p>TUL Wizards - 0</p>
+        </div>
+        <div>
+          <p>BOS Hackers</p>
+          <p>TYO Youkai</p>
+        </div>
+        <div>
+          <p>BOI Knights - 5</p>
+          <p>SEA Sea Lions - 11</p>
+        </div> -->
+        <!-- </div> -->
       </div>
       <div class="row">
         <div class="col-12 black-background">
-          <div class="col-8">
+          <div class="col-8 nav">
             <span>DSNN</span>
           </div>
         </div>

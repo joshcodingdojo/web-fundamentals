@@ -65,10 +65,43 @@ html {
   margin-top: 0.5em;
 }
 
+.live-scores-text {
+  margin-top: 8px;
+  text-align: right;
+}
+
 .top-scorebox-flex-container p {
   font-size: 0.8em;
 }
 
 .black-background {
   background-color: black;
+}
+
+.league-scores > div {
+  display: inline-block;
+  /* margin-left: 50px; */
+}
+
+#middle-scores > div:first-of-type {
+  margin-left: 10px;
+}
+
+#middle-scores > div:last-of-type,
+#right-scores > div:last-of-type {
+  margin-left: 150px;
+}
+
+#right-scores > div:first-of-type {
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  #middle-scores > div:last-of-type,
+  #right-scores > div:last-of-type {
+    margin-left: 76px;
+  }
+  #right-scores > div:first-of-type {
+    margin-left: 20px;
+  }
 }
