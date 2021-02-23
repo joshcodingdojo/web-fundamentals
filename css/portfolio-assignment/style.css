@@ -1,0 +1,107 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.purple-content-background {
+  background-color: purple;
+  padding: 20px 30px;
+  height: 1000px;
+}
+
+.top-row > div {
+  display: inline-block;
+}
+
+.head-shot-box {
+  height: 300px;
+  width: 425px;
+  background-image: url(./img/photo_of_me.jpg);
+  border: 5px solid silver;
+  background-size: cover;
+}
+
+.box-header-background {
+  height: 50px;
+  background-color: silver;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.box-header-background > span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.about-box {
+  margin-left: 20px;
+  vertical-align: top;
+  background-color: white;
+  height: 310px;
+  width: 475px;
+}
+
+.top-box-text > p {
+  font-size: 19px;
+  margin: 10px;
+}
+#continue-reading {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bottom-row > div {
+  display: inline-block;
+  width: 280px;
+  background-color: white;
+}
+
+.head-shot-box img,
+#project-pic {
+  background-size: cover;
+  width: 100%;
+}
+
+.bottom-row {
+  margin-top: 20px;
+}
+
+.bottom-row p {
+  font-size: 18px;
+}
+
+.project-description {
+  height: 200px;
+  margin-left: 10px;
+}
+
+.tech-silver-heading {
+  height: 40px;
+  background-color: silver;
+  display: flex;
+  align-items: center;
+}
+
+.tech-silver-heading > span {
+  margin-left: 10px;
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+}
+
+.tech-circle-box img {
+  height: 40px;
+  margin-left: 10px;
+}
+
+.tech-circle-box {
+  /* display: flex; */
+  justify-content: space-around;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+.second-line {
+  margin-top: 10px;
+}
